@@ -19,11 +19,9 @@ storage constraints and cleanup
 
 I ran everything on:
 
-MacBook Air (Apple Silicon)
-
-CPU only (no GPU support)
-
-Podman as the container engine (default in RamaLama)
+- MacBook Air (Apple Silicon)
+- CPU only (no GPU support)
+- Podman as the container engine (default in RamaLama)
 
 While running commands, I consistently got this warning:
 
