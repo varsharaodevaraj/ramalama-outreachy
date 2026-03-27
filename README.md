@@ -63,6 +63,7 @@ I started with a smaller model using the Ollama transport:
 
 ```bash
 ramalama run ollama://tinyllama "What are the Four Foundations of the Fedora project?"
+```
 
 This worked successfully.
 
