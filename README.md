@@ -20,7 +20,9 @@ storage constraints and cleanup
 I ran everything on:
 
 MacBook Air (Apple Silicon)
+
 CPU only (no GPU support)
+
 Podman as the container engine (default in RamaLama)
 
 While running commands, I consistently got this warning:
@@ -93,7 +95,9 @@ What I understood
 This failure was likely due to:
 
 large model size (~4–5GB)
+
 CPU-only execution
+
 container overhead
 
 This showed that: Not all models are practical for all systems
@@ -137,6 +141,7 @@ This step made me realize:
 Even after fixing storage, some models still failed due to:
 
 container startup timeout
+
 CPU limitations
 
 So I tried a different approach.
@@ -160,8 +165,11 @@ This worked successfully.
 <img width="1470" height="244" alt="Succes_model_las" src="https://github.com/user-attachments/assets/63d94a69-0f0a-40fa-bb8c-882975e0f33c" />
 
 What changed?
+
 No container overhead
+
 Better compatibility with Mac (M-series chips)
+
 Faster and more stable execution
 
 ## 12. Additional Exploration (Model Inspection)
@@ -186,10 +194,12 @@ Ollama (Container-based)
 ✅ Easy to use
 ✅ Works reliably for small models
 ❌ Limited flexibility
+
 Hugging Face (Container-based)
 ❌ Failed for larger models
 ❌ Heavy resource usage
 ❌ Container startup issues
+
 Hugging Face (MLX – No container)
 ✅ Worked on Mac
 ✅ More stable
@@ -205,7 +215,7 @@ Debugging is part of the process
 
 ## 15. Does RamaLama make AI “boring”?
 
-In a good way — yes.
+In a good way —> yes.
 
 RamaLama simplifies:
 
