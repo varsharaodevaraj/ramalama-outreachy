@@ -61,6 +61,7 @@ This also helped me understand what RamaLama can do (run, pull, inspect, etc.)
 
 I started with a smaller model using the Ollama transport:
 
+```bash
 ramalama run ollama://tinyllama "What are the Four Foundations of the Fedora project?"
 
 This worked successfully.
@@ -183,20 +184,20 @@ storage path
 
 From all experiments:
 
-Ollama (Container-based)
-✅ Easy to use
-✅ Works reliably for small models
-❌ Limited flexibility
+-> Ollama (Container-based)
+- ✅ Easy to use
+- ✅ Works reliably for small models
+- ❌ Limited flexibility
 
-Hugging Face (Container-based)
-❌ Failed for larger models
-❌ Heavy resource usage
-❌ Container startup issues
+-> Hugging Face (Container-based)
+- ❌ Failed for larger models
+- ❌ Heavy resource usage
+- ❌ Container startup issues
 
-Hugging Face (MLX – No container)
-✅ Worked on Mac
-✅ More stable
-✅ Better suited for CPU/M-series chips
+-> Hugging Face (MLX – No container)
+- ✅ Worked on Mac
+- ✅ More stable
+- ✅ Better suited for CPU/M-series chips
 
 ## 14. Key Learnings
 
