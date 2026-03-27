@@ -35,9 +35,9 @@ I installed RamaLama using the official install script.
 
 The installation handled:
 
-dependencies (llama.cpp, ggml, etc.)
-environment setup
-binary installation
+- dependencies (llama.cpp, ggml, etc.)
+- environment setup
+- binary installation
 
 Everything completed successfully.
 
@@ -92,11 +92,9 @@ What I understood
 
 This failure was likely due to:
 
-large model size (~4–5GB)
-
-CPU-only execution
-
-container overhead
+- large model size (~4–5GB)
+- CPU-only execution
+- container overhead
 
 This showed that: Not all models are practical for all systems
 
@@ -138,9 +136,8 @@ This step made me realize:
 
 Even after fixing storage, some models still failed due to:
 
-container startup timeout
-
-CPU limitations
+- container startup timeout
+- CPU limitations
 
 So I tried a different approach.
 
@@ -164,11 +161,9 @@ This worked successfully.
 
 What changed?
 
-No container overhead
-
-Better compatibility with Mac (M-series chips)
-
-Faster and more stable execution
+- No container overhead
+- Better compatibility with Mac (M-series chips)
+- Faster and more stable execution
 
 ## 12. Additional Exploration (Model Inspection)
 
